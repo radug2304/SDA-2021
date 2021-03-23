@@ -14,7 +14,7 @@ public class Operations {
 		System.out.println("Second number : ");
 		secondNumber = sc.nextInt();	
 		}catch(Exception e) {
-			System.out.println("Just numbers please :) , try again!");
+			System.err.println("Just numbers please :) , try again!");
 			sc.nextLine();
 			read();
 		}
@@ -39,7 +39,7 @@ public class Operations {
 	}
 	
 	public void average() {
-		double avg = (firstNumber + secondNumber)/2;
+		double avg = (firstNumber + secondNumber)/2.0;
 		System.out.println("Average is : " + avg);
 	}
 	
