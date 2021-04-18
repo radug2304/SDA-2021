@@ -18,7 +18,7 @@ public class Customer {
 	}
 	
 	public String getCompleteName() {
-		return (firstName + ", "+lastName);
+		return (getFirstName() + ", "+getLastName());
 	}
 
 	public Adress getAdress() {
