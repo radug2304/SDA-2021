@@ -7,8 +7,9 @@ import java.util.List;
 public class main {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
-
+		
 		System.out.println("Alegeti modul de desenare:");
 		System.out.println("A - automat");
 		System.out.println("M - manual");
@@ -18,13 +19,14 @@ public class main {
 
 			List<Shape> shapes = new ArrayList<Shape>();
 
-			shapes.add(new Square("#000000", 1, 7));
-			shapes.add(new Square("#FFFFFF", 1, 10));
-			shapes.add(new Rectangle("#FD23FF", 3, 10, 5));
-			shapes.add(new Rectangle("#002F3C", 1, 5, 10));
+			shapes.add(new Square("#010101", 1, 7));
+			shapes.add(new Square("#010101", 1, 10));
+			shapes.add(new Rectangle("#022010", 3, 10, 5));
+			shapes.add(new Rectangle("#010321", 1, 5, 10));
 			shapes.add(new Circle("#CCC908", 1, 5));
 			shapes.add(new Circle("#FDAE00", 1, 10));
-
+		
+	
 			for (Shape s : shapes) {
 				System.out.println("Shape Name : " + s.getName());
 				System.out.println("Shape Area : " + s.getArea());
